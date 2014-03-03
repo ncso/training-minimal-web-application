@@ -1,0 +1,5 @@
+*~
+mdep.classpath
+target/
+webapps/myproject.war
+webapps/myproject/
