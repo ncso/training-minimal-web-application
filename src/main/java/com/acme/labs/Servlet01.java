@@ -10,18 +10,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-import java.util.Iterator;
 import java.util.Map;
 import java.util.LinkedHashMap;
-import java.util.ArrayList;
 import java.util.List;
 
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-
-import org.javatuples.Pair;
 import org.javatuples.Triplet;
 
 import org.eclipse.jetty.util.log.Log;
