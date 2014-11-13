@@ -3,6 +3,9 @@ package com.acme.labs;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -11,15 +14,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import java.util.Map;
-import java.util.LinkedHashMap;
-import java.util.List;
-
-import org.javatuples.Triplet;
-
 import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.util.log.Logger;
+import org.javatuples.Triplet;
 
+@SuppressWarnings("serial")
 @WebServlet(value="/s01/*", loadOnStartup=1)
 public class Servlet01 extends HttpServlet {
     private static final Logger LOG = Log.getLogger(Servlet01.class);

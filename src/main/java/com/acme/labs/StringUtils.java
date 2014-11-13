@@ -4,7 +4,6 @@ package com.acme.labs;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
 
 public class StringUtils {
     public static String join(Collection<?> s, String delimiter) {

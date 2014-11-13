@@ -2,23 +2,15 @@
 package com.acme.labs;
 
 import java.math.BigInteger;
-import java.io.UnsupportedEncodingException;
-
-import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
-
 import java.nio.charset.Charset;
 
+@SuppressWarnings("serial")
 public class StringID extends BigInteger {
     public static final Charset charsetUTF8 = Charset.forName("UTF-8");
 
     private String _id;
 
     public static final int RADIX = Character.MAX_RADIX; /* this is expected to be 36 */
-
-    static {
-	assert RADIX == 36;
-    }
 
     public StringID(byte b[]) {
 	/* public BigInteger(int signum, byte[] magnitude)
@@ -36,7 +28,7 @@ public class StringID extends BigInteger {
     }
 
     public String toString(int radix) {
-	throw new RuntimeException("not available");
+        throw new UnsupportedOperationException();
     }
 
     public static StringID valueOf(String s) {

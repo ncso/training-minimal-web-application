@@ -3,3 +3,6 @@ mdep.classpath
 target/
 webapps/myproject.war
 webapps/myproject/
+/.settings/
+/.classpath
+/.project

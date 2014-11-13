@@ -5,19 +5,13 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
-
 import org.eclipse.jetty.util.log.Log;
 import org.eclipse.jetty.util.log.Logger;
 
 public class BasicTest extends TestCase {
     private static final Logger LOG = Log.getLogger(BasicTest.class);
-    private final String _testName;
     public BasicTest(String testName) {
         super(testName);
-        _testName = testName;
         LOG.debug("test \"" + testName + "\" created: " + this);
     }
     public static Test suite() {

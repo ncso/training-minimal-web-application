@@ -15,7 +15,9 @@ public class AppServletContextListener implements ServletContextListener {
     private static final String THISKEY = "h77krfld2jo7001scr"; /* com-acme-labs-AppServletContextListener */
     public static void someUtilityMethod(ServletContext servletContext) throws Exception {
         AppServletContextListener _this = (AppServletContextListener)servletContext.getAttribute(THISKEY);
-        LOG.debug("hi!");
+        if (LOG.isDebugEnabled()) {
+        	LOG.debug("hi from " + _this.toString() + "!");
+        }
     }
     public void contextInitialized(ServletContextEvent servletContextEvent) {
         ServletContext servletContext = servletContextEvent.getServletContext();
